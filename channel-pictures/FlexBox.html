@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/intro-to-html/e12-flexbox.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>FlexBox</title>
+        <style>
+            .header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                margin-top: 50px;
+                border-width: 1px;
+                border-color:gray ;
+                border-style: solid;
+                height: 50px;
+            }
+            .homepage{
+                display: flex;
+                flex-direction: row;
+            }
+            .num{
+                
+            }
+    
+        </style>
+    <input type="hidden" id="_o_dbjbempljhcmhlfpfacalomonjpalpko" data-inspect-config="3"><script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script></head>
+    <body huaban_collector_injected="true">
+        <div style="
+            display: flex;
+            flex-direction: row;
+
+            ">
+            <div style="background-color: lightblue;width: 200px;">200px</div>
+            <div style="background-color: lightpink;width: 75px;">75px</div>
+        </div>
+
+        <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+
+        ">
+        <div style="background-color: lightblue;width: 50px;">
+            item1</div>
+        <div style="background-color: lightpink;flex:1;">
+            item2</div>
+        <div style="background-color: lightblue;width: 75px;">
+            item3</div>
+        </div>
+
+        <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        justify-content: space-between;
+
+        ">
+        <div style="background-color: lightpink;">
+            item1</div>
+        <div style="background-color: lightpink;">
+            item2</div>
+        <div style="background-color: lightpink;">
+            item3</div>
+        <div style="background-color: lightpink;">
+            item4</div>
+        </div> 
+
+        <div class="header">
+            <div style="background-color: lightpink;">
+                item1
+            </div>
+            <div style="background-color: lightpink;">
+                item1
+            </div>
+        </div>
+         
+        <div>
+            <div class="homepage">
+                <div><p>Home</p></div>
+                <div><button class="num">14</button></div>
+            </div>
+        </div>
+
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+<div id="eagle-drag-images" style="position: fixed; top: -100000px;"></div></body></html>
